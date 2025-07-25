@@ -21,7 +21,7 @@ price_return = st.sidebar.slider("Zwrot z ceny (dzienny)", -3.0, 3.0, 0.0)
 # Załaduj model
 @st.cache_resource
 def load_model():
-    return joblib.load("model_pipeline.pkl")
+    return joblib.load("model_pipeline_compatible.pkl")
 
 model = load_model()
 
